@@ -7,10 +7,12 @@ import (
 const (
 	spanish = "Spanish"
 	french  = "French"
+	korea   = "Korea"
 
 	englishHelloPrefix = "Hello, "
 	spanishHelloPrefix = "Hola, "
 	frenchHelloPrefix  = "Bonjour, "
+	koreaHelloPrefix   = "Annyeongasheo, "
 )
 
 func Hello(name string, language string) string {
@@ -27,6 +29,8 @@ func greetingPrefix(language string) (prefix string) {
 		prefix = spanishHelloPrefix
 	case french:
 		prefix = frenchHelloPrefix
+	case korea:
+		prefix = koreaHelloPrefix
 	default:
 		prefix = englishHelloPrefix
 	}
@@ -37,5 +41,6 @@ func greetingPrefix(language string) (prefix string) {
 func main() {
 	fmt.Println(Hello("Ramos", spanish))
 	fmt.Println(Hello("Mbappe", french))
+	fmt.Println(Hello("Rose", korea))
 	fmt.Println(Hello("", ""))
 }
