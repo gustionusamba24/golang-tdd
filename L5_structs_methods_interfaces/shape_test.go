@@ -21,6 +21,7 @@ func TestArea(t *testing.T) {
 		{name: "Rectangle", shape: Rectangle{Width: 12, Height: 6}, hasArea: 72.0},
 		{name: "Circle", shape: Circle{Radius: 10}, hasArea: 314.1592653589793},
 		{name: "Triangle", shape: Triangle{Base: 18, Height: 6}, hasArea: 54},
+		{name: "Square", shape: Square{Side: 8}, hasArea: 64},
 	}
 
 	for _, tt := range areaTests {
@@ -30,6 +31,5 @@ func TestArea(t *testing.T) {
 				t.Errorf("%#v got %g want %g", tt.shape, got, tt.hasArea)
 			}
 		})
-
 	}
 }

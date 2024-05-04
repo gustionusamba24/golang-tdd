@@ -32,6 +32,14 @@ func (t Triangle) Area() float64 {
 	return (t.Base * t.Height) / 2
 }
 
+type Square struct {
+	Side float64
+}
+
+func (s Square) Area() float64 {
+	return math.Pow(s.Side, 2)
+}
+
 func Perimeter(r Rectangle) float64 {
 	return 2 * (r.Width + r.Height)
 }
