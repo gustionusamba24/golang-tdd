@@ -1,1 +1,18 @@
 file 3
+
+644ecd5 (HEAD -> main) amend commit
+ea8798f file3.txt
+0687462 file2.txt
+3f8c056 mengubah nama file
+b818b62 file 1
+54b49cd tambah main.go
+fb54340 (origin/main) chore: update go.mod
+359de7d test: testing square area
+2fa9967 chore: go.mod
+b4da4ec refactor: assert no error function
+66d5110 refactor: move the helpers out of the main test function
+e0137a4 refactor: implementing pointer
+6b1eee4 test: testing wallet pointer function
+542e99e refactor: refactor the code in order to increase readability
+88807ba refactor: add name of struct fields
+6a94a0a test: implement table driven test
